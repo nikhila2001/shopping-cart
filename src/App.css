@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.login-wrapper {
+    width: 340px;
+    height: 400px;
+    background-color: #2c2c2c;
+    padding: 47px;
+    padding-bottom: 57px;
+    color: #fff;
+    border-radius: 17px;
+  padding-bottom: 50px;
+  font-size: 1.3em;
+  
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.login-wrapper input[type="text"],
+.login-wrapper input[type="password"] {
+    opacity: 1;
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 13px 18px;
+    margin: 10px 0 0 0;
+    font-size: 0.8em;
+    border-radius: 100px;
+    background: #3c3c3c;
+    color: #fff; 
+}
+
+.submit-btn {
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    color: #fff;
+    padding: 13px !important;
+    border-radius: 100px;
+    border: none;
+    width: 100%;
+    margin-top: 25px;
+   
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .submit-btn:hover {
+    background: linear-gradient(144deg, #1e1e1e , 20%,#1e1e1e 50%,#1e1e1e );
+    color: rgb(255, 255, 255);
+    padding: 16px !important;
+    cursor: pointer;
+    transition: all 0.4s ease;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
